@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    background: url(./../images/img_8.jpeg) no-repeat;
+    max-height: 800px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    filter: brightness(80%) drop-shadow(2px 4px 6px);
+}
+.full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.fixed-width {
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+.nav {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.nav a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.header-box {
+    width: 540px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    color: white;
+    margin-left: -500px;
+}
+.header-box p {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.header-box h1 {
+    font-size: 70px;
+}
+/* section-1 */
+.section-1-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+    margin-top: -100px;
+    z-index: 1;
+}
+.section-1-box .card {
+    border: 1px solid rgba(128, 128, 128, 0.596);
+    margin-right: 20px;
+    background-color: white;
+}
+.section-1-box .card img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: red;
+    padding: 5px;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+.card p {
+    font-style: italic;
+    line-height: 1.5;
+}
+/* section-2 */
+.section-2 {
+    background: url(./../images/img_10.jpeg) no-repeat center;
+    max-height: 800px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    filter: drop-shadow(2px 4px 6px);
+}
+.section-2-box {
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    height: 70%;
+}
+.top-site {
+    background-color: rgba(255, 255, 255, 0.123);
+}
+.top-site,
+.bottom-site {
+    height: 50%;
+
+    padding-top: 20px;
+}
+.top-site h4 {
+    color: red;
+    margin-bottom: 30px;
+}
+.top-site h2 {
+    margin-bottom: 30px;
+}
+.top-site p {
+    margin-bottom: 20px;
+}
+.bottom-site {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-site-left img {
+    width: 50px;
+    height: 50px;
+}
+.bottom-site-right img {
+    width: 50px;
+    height: 50px;
+}
+.bottom-site img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bottom-site h3 {
+    margin-bottom: 20px;
+}
+.bottom-site-left,
+.bottom-site-right {
+    width: 290px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.123);
+}
+/* section-3 */
+.section-3 {
+    width: 1200px;
+}
+.section-3 div {
+    width: calc(100% / 4);
+    height: 280px;
+    overflow: hidden;
+}
+.section-3 img {
+    width: 100%;
+}
+.scetion-3-image {
+    position: relative;
+}
+.scetion-3-image img {
+    position: absolute;
+    bottom: 0px;
+}
+.section-3-div {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.section-3-div a,
+h3 {
+    color: rgba(255, 0, 0, 0.719);
+    margin-bottom: 20px;
+}
+.section-3-div .section-3-paragrahp {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: white;
+}
+.section-3 p {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.356);
+    margin-bottom: 20px;
+}
+.section-3 a {
+    text-decoration: none;
+}
+/* section-4 */
+.section-4 {
+    height: 600px;
+    flex-direction: column;
+}
+.section-4-top {
+    height: 30%;
+    margin-top: 60px;
+    text-align: center;
+}
+.section-4-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.section-4-top p {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.section-4-top h3 {
+    color: black;
+    font-size: 23px;
+}
+.section-4-cards {
+    width: 180px;
+    margin: 10px;
+}
+
+.section-4-cards img {
+    width: 100%;
+}
+.img-3 {
+    overflow: hidden;
+    height: 160px;
+}

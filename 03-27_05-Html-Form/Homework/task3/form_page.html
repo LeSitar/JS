@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form page</title>
+  </head>
+
+  <body>
+    <div align="center" id="top">
+      <a href="./index.html"
+        ><img src="./images/klipartz.png" alt="bird" width="100"
+      /></a>
+    </div>
+    <h1 align="center" style="margin-top: -20px">Hello birds!</h1>
+    <div align="center">
+      <a href="./form_page.html"
+        ><div
+          style="
+            background-color: rgb(100, 196, 237);
+            width: 200px;
+            display: inline-block;
+          "
+        >
+          <h3>ONE</h3>
+        </div></a
+      >
+      <a href="./animals_page.html"
+        ><div
+          style="
+            background-color: rgb(100, 235, 237);
+            width: 200px;
+            display: inline-block;
+          "
+        >
+          <h3>TWO</h3>
+        </div>
+      </a>
+      <div
+        style="
+          background-color: rgb(90, 233, 166);
+          width: 200px;
+          display: inline-block;
+        "
+      >
+        <h3>THREE</h3>
+      </div>
+    </div>
+    <hr />
+    <h2 align="center">Registration</h2>
+    <div align="center">
+      <form action="#" method="GET" style="width: 600px">
+        <fieldset align="center">
+          <legend>Fill the form</legend>
+        <label> Name:<br />
+          <input type="text" name="name" size="40" required /></label> <br /><br />
+          <label> E-mail: <br />
+          <input type="email" name="email" size="40"  required/> </label><br /><br />
+          <label> Password: <br />
+          <input type="password" name="password" size="40" required /> </label> <br /><br />
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female <br /><br />
+          <select name="color">
+            <option value="">Select your favorite color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+          </select>
+          <br /><br />
+          <input type="date" name="date" /><br /><br />
+          <input type="submit" value="send" />
+          <input type="reset" value="reset" />
+        </fieldset>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <div align="center">
+      <form action="#" method="GET">
+        <table width="600" >
+          <caption><h2>Send your message</h2></caption> 
+            <tr><td>E-mail:</td><td colspan="4"><input type="email" name="email" id="" placeholder="Type your email"size="40"></td>
+            </tr>
+            <tr><td valign="top" >Message:</td><td colspan="4"><textarea name="message" id="" cols="30" rows="5" placeholder="Type your message" style="width:310px;"></textarea></td>
+            </tr>
+            <tr>
+              <td>
+              Do you like birds?
+              </td>
+              <td>
+                <label>Yes <input type="radio" name="like" value="yes"> </label>
+                <label>No <input type="radio" name="like" value="no"> </label>
+              </td>
+            </tr>
+            <tr align="right"><td colspan="2"><td><input type="submit" value="send" /><input type="reset" value="reset" ></td>
+            </tr>
+
+
+        </table>
+      </form>
+    </div>
+    </div>
+    <hr/>
+    <div align="center" style="background-color: rgb(100, 196, 237)">
+      <ol style="display: inline-block; text-align: left" start="10">
+        <li><h2>All about birds</h2></li>
+        <li><h2>Birds life in the wild</h2></li>
+        <li><h2>Birds are our friends</h2></li>
+      </ol>
+      <ul type="square" style="display: inline-block; text-align: left">
+        <li><h2>Birds life in the wild</h2></li>
+        <li>
+          <h2>
+            <a href="https://en.wikipedia.org/wiki/Bird" target="_blank"
+              >All about birds</a
+            >
+          </h2>
+        </li>
+        <li><h2>Birds are our friends</h2></li>
+      </ul>
+    </div>
+  </body>
+
+</html>

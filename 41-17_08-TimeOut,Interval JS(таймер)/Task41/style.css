@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(199, 250, 148);
+    height: 100vh;
+    position: relative;
+    width: 1200px;
+}
+.timer {
+    border: 1px solid black;
+    width: 400px;
+    margin-left: 420px;
+    margin-top: 200px;
+    height: 210px;
+    border-radius: 10px;
+    position: absolute;
+}
+.timer h2 {
+    margin-top: 20px;
+}
+button {
+    padding: 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#startBtn {
+    background-color: rgb(37, 223, 223);
+}
+#stopBtn {
+    background-color: red;
+}
+
+#timerValue {
+    margin-top: 10px;
+    height: 30px;
+    text-align: center;
+}
+p {
+    margin-top: 15px;
+    font-size: 30px;
+}

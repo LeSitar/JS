@@ -1,0 +1,22 @@
+.one {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 1s ease;
+}
+.yellow {
+    background-color: yellow;
+}
+.two {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-top: 10px;
+    display: inline-block;
+    transition: all 1s ease;
+}
+.fs-30 {
+    font-size: 30px;
+}

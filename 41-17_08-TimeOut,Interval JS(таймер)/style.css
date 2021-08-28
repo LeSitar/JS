@@ -1,0 +1,22 @@
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: green;
+}
+.btn {
+    margin: 10px 0;
+    width: 100px;
+    height: 40px;
+    background-color: greenyellow;
+    border: none;
+}
+.btn:hover {
+    cursor: pointer;
+}

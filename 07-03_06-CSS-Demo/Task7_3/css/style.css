@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(156, 171, 236);
+}
+.letter {
+    font-size: 700px;
+    float: left;
+    width: 30%;
+    margin-left: -50px;
+    margin-top: 30px;
+    color: rgba(167, 193, 241, 0.4);
+}
+.girl {
+    float: left;
+    width: 33%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.girl img {
+    width: 80%;
+}
+.box1 {
+    width: 35%;
+    float: left;
+    margin-top: 230px;
+    margin-left: -230px;
+    font-size: 20px;
+}
+.text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text2 {
+    color: white;
+}

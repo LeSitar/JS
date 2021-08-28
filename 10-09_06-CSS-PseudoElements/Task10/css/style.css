@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+#header {
+    background: url(./../images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 800px;
+    color: white;
+    position: relative;
+}
+.container {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/* menu */
+nav {
+    overflow: hidden;
+}
+nav img {
+    float: left;
+    width: 120px;
+    padding-left: 50px;
+}
+nav ul {
+    text-align: center;
+    position: fixed;
+    right: 0;
+    width: 500px;
+    background-color: rgba(178, 187, 241, 0.699);
+    z-index: 1;
+    border-radius: 10px;
+}
+nav ul li {
+    display: inline-block;
+    width: 110px;
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover,
+.sub-menu ul li:hover {
+    background-color: rgba(180, 177, 223, 0.527);
+}
+.sub-menu ul {
+    position: absolute;
+    right: 197px;
+    width: 110px;
+    display: none;
+}
+ul li:hover ul {
+    display: block;
+    margin-top: 10px;
+}
+
+.middle-box {
+    margin-top: 50px;
+    text-align: center;
+}
+.middle-box h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.middle-box p {
+    width: 60%;
+    margin: 15px auto;
+}
+.buttons {
+    text-align: center;
+    padding: 15px;
+}
+.btn {
+    text-transform: uppercase;
+    border: 2px solid white;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 0.8rem;
+    line-height: 36px;
+}
+.btn img,
+.btn span {
+    vertical-align: middle;
+}
+.btn img {
+    margin-right: 5px;
+}
+.btn-more {
+    background-color: orange;
+}
+.btn:hover {
+    background-color: rgba(255, 166, 0, 0.521);
+}
+.btn-message {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+}
+.btn-message:hover {
+    border: 3px solid white;
+}
+/* section 1 */
+.section-1 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 800px;
+    position: relative;
+    background-color: rgb(74, 235, 208);
+}
+.section-1 .container {
+    background: rgb(16, 243, 16);
+}
+.section-1 .left {
+    float: left;
+    width: 50%;
+    padding-top: 30%;
+    position: relative;
+    left: -50px;
+}
+.section-1 .left h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.section-1 .left button {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 160px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.section-1 .right {
+    float: right;
+    width: 50%;
+    position: relative;
+    right: -50px;
+    top: 30px;
+}
+.container .right img {
+    width: 100%;
+}
+.anchor {
+    width: 60px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: orange;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.anchor:hover {
+    border: 3px solid white;
+    width: 70px;
+}
+.anchor a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* section-2 */
+.section-2 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 800px;
+    position: relative;
+    background-color: rgb(159, 146, 190);
+}
+.section-2 .up {
+    height: 400px;
+    position: relative;
+}
+.section-2 .up-left {
+    float: left;
+    padding: 40px;
+    border: 20px solid rgb(31, 241, 213);
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    left: 200px;
+}
+.section-2 .up-right {
+    float: right;
+    width: 50%;
+    color: white;
+}
+.section-2 .up-right {
+    padding: 30px;
+    background-color: rgb(31, 241, 213);
+}
+.section-2 .up-right h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.section-2 .up-right p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-bottom: 20px;
+}
+.freepik {
+    font-style: italic;
+}
+.freepik span {
+    border-bottom: 1px solid white;
+}
+.section-2 .up-right button {
+    font-size: 15px;
+    padding: 5px;
+    width: 180px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: rgb(31, 241, 213);
+    background-color: #fff;
+    border: 0;
+    font-weight: bolder;
+}
+
+.section-2 .down {
+    height: 400px;
+}
+.section-2 .down div {
+    border: 1px solid rgb(31, 241, 213);
+    border-radius: 50%;
+    padding: 40px;
+    background-color: rgb(31, 241, 213);
+    float: left;
+    position: relative;
+    left: 200px;
+    z-index: 3;
+    bottom: -100px;
+}
+.section-2 .down-women {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    bottom: 100px;
+    left: 120px;
+    box-shadow: 5px 0 5px gray;
+}
+.section-2 .down-right-women {
+    width: 20%;
+    position: relative;
+    border-radius: 50%;
+    bottom: 100px;
+    left: 40px;
+    border: 9px solid rgb(31, 241, 213);
+    box-shadow: 5px 0 5px gray;
+}
+/* section-3 */
+.review {
+    position: relative;
+}
+.review .container {
+    overflow: visible;
+}
+
+.review .container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+.review .container p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 50px;
+    padding-top: 20px;
+}
+
+.cards {
+    padding: 50px 30px;
+    margin: 0 -50px;
+}
+
+.card-r {
+    display: inline-block;
+    margin: 0 20px;
+    width: calc(100% / 3 - 50px);
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 50px 20px 20px;
+    position: relative;
+}
+
+.cards .card-r p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-r img.avatar {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 6px solid orange;
+    top: -30px;
+    left: -30px;
+    border-radius: 50%;
+}
+
+img.img-link {
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}

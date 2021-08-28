@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    background-color: rgb(221, 205, 205);
+    height: 100vh;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.img_box {
+    margin-top: 40px;
+}
+.img_box .item {
+    display: none;
+    margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>DOM, Events</title>
+    <style>
+        .wrapper {
+            width: 500px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        form {
+            width: fit-content;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#" id="myForm" name="subscribe">
+            <label for="firstName">first name</label>
+            <input type="text" id="firstName" name="firstName">
+            <br>
+            <label for="lastName">last name</label>
+            <input type="text" id="lastName" name="lastName">
+            <br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <input type="submit" value="send">
+        </form>
+    </div>
+</body>
+
+</html>

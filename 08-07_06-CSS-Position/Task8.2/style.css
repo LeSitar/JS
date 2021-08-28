@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sport {
+    background-color: rgb(205, 222, 241);
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+}
+.container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 30px solid #20baca;
+    position: relative;
+    top: 120px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.text-box {
+    background-color: #20baca;
+    padding: 30px 50px 90px;
+    width: 60%;
+    display: inline-block;
+    right: 30px;
+    height: 470px;
+}
+.text-box h2 {
+    font-size: 2.9rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.text-box p {
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.image-link {
+    font-size: 0.8rem;
+}
+.image-link span {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.text-box button {
+    padding: 10px 40px;
+    background-color: white;
+    color: turquoise;
+    text-transform: uppercase;
+    border: 0px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+.main-img {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    background: url(./images/try-min.jpeg);
+    border-radius: 50%;
+    background-size: cover;
+    top: -70px;
+    left: 10px;
+    box-shadow: 8px 8px 5px grey;
+}
+.solid-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: indigo;
+    position: absolute;
+    right: 340px;
+    top: 340px;
+}
+.small-img {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 280px;
+    right: -120px;
+    background-image: url(./images/sdfee.jpeg);
+    background-size: cover;
+    border: 16px solid indigo;
+    border-radius: 50%;
+    box-shadow: 8px 8px 5px grey;
+}

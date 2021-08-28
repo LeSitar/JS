@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+/* Backround*/
+#header {
+    background: url(./../images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 800px;
+    color: white;
+    position: relative;
+}
+.container {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* menu */
+nav {
+    padding: 30px 0;
+    overflow: hidden;
+}
+nav img {
+    float: left;
+    width: 60px;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+nav ul li:hover,
+.sub-menu ul li:hover {
+    background-color: gray;
+}
+.sub-menu ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+.sub-menu ul li {
+    padding: 15px;
+}
+ul li:hover ul {
+    display: block;
+    margin-top: 10px;
+}
+
+.middle-box {
+    margin-top: 50px;
+    text-align: center;
+}
+.middle-box h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.middle-box p {
+    width: 60%;
+    margin: 15px auto;
+}
+.buttons {
+    text-align: center;
+    padding: 15px;
+}
+.btn {
+    text-transform: uppercase;
+    border: 2px solid white;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 0.8rem;
+    line-height: 36px;
+}
+.btn img,
+.btn span {
+    vertical-align: middle;
+}
+.btn img {
+    margin-right: 5px;
+}
+.btn-more {
+    background-color: orange;
+}
+.btn:hover {
+    background-color: rgba(255, 166, 0, 0.521);
+}
+.btn-message {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+}
+.btn-message:hover {
+    border: 3px solid white;
+}

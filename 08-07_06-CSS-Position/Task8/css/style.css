@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.945);
+}
+.wrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.header {
+    background: url(./../images/bg-new.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 15px 0;
+}
+nav ul li {
+    float: left;
+    margin-right: 15px;
+}
+a {
+    color: rgba(255, 255, 255, 0.466);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.clearfix {
+    clear: both;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: lighter;
+    width: 90px;
+    line-height: 45px;
+}
+.QA {
+    padding: 20px 0 0 0;
+}
+a.button {
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: inline-block;
+}
+.bottom-section {
+    width: 700px;
+    margin-left: 450px;
+    padding: 20px 0;
+}
+.card {
+    float: left;
+    margin: 0 15px;
+    width: calc(100% / 4 - 30px);
+    text-align: center;
+    padding: 30px 5px;
+    border-radius: 8px;
+}
+.card img {
+    width: 70px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.page2 {
+    background-size: cover;
+    height: 100vh;
+    background-color: rgb(255, 153, 0);
+    z-index: 0;
+    position: relative;
+    margin-top: -400px;
+}
+.phone-section {
+    width: 300px;
+    margin: 0 auto;
+}
+.phone {
+    position: absolute;
+    left: 850px;
+    bottom: 220px;
+    width: 300px;
+}

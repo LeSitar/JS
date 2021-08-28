@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+}
+.app {
+    height: 100vh;
+}
+section.section {
+    background: url(./../images/bg.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center top;
+    min-width: 800px;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.logo {
+    width: 70px;
+    padding-top: 50px;
+    margin-left: 40px;
+}
+
+/* nav section */
+nav {
+    padding-top: 50px;
+    float: right;
+    width: 310px;
+    text-align: center;
+}
+
+nav ul li {
+    color: white;
+    display: inline-block;
+    width: 95px;
+    font-size: 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 95px;
+}
+ul li:hover {
+    background-color: rgb(66, 139, 221);
+}
+ul li ul li:hover {
+    background-color: black;
+}
+ul li:hover ul {
+    display: block;
+}
+nav .drop:hover {
+    background-color: black;
+}
+/* Center section */
+.center-section {
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 130px;
+    width: 79%;
+}
+.center-section h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+.center-section p {
+    padding-bottom: 40px;
+}
+/* Buttons-section */
+.buttons {
+    width: 270px;
+    float: left;
+    margin-left: 300px;
+}
+.buttons button {
+    color: rgba(255, 255, 255, 0.993);
+}
+.buttons .button-1 {
+    width: 120px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background-color: orange;
+}
+.buttons .button-1:hover {
+    background-color: rgba(255, 166, 0, 0.534);
+}
+.buttons .button-2 {
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.button-2 img {
+    width: 10%;
+}
+
+/* Message section */
+.message img {
+    width: 3%;
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

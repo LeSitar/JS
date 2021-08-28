@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(119, 90, 153);
+    color: white;
+}
+
+body h1 {
+    text-align: center;
+}

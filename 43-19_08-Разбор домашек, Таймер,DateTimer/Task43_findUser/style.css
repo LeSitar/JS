@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(206, 187, 223);
+}
+.wrapper {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.input {
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.find-button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    width: 80px;
+    text-transform: uppercase;
+}
+.find-button:hover {
+    cursor: pointer;
+}
+hr {
+    height: 2px;
+}
+ul {
+    margin-top: 20px;
+}
+li {
+    width: 555px;
+    list-style: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+li:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+}

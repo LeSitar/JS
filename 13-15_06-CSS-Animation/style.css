@@ -1,0 +1,98 @@
+.container {
+    width: 600px;
+    margin: 100px auto;
+}
+.container h2 {
+    padding: 15px;
+    border: 1px solid black;
+    width: 200px;
+    /* need for animtion  */
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    как происходит движение элемента cubic-bezier
+    transition-timing-function: linear; */
+    /* задержка */
+    /* transition-delay: 1s; */
+    /* сокращенно первая цифра для продолжительности, вторая для задержки  transform  увеличивается текст*/
+    transition: background-color 3s 1s,
+        transform 3s cubic-bezier(0.27, 0.57, 0.42, 1.68), border-radius 3s;
+    /* visibility 2s; */
+}
+
+.container h2:hover {
+    background-color: red;
+    transform: scale(1.5);
+    border-radius: 30px;
+    /* visibility: hidden; */
+}
+.item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    top: 100px;
+    left: 100px;
+}
+/* animation-name: moving;
+    animation-duration: 2s;
+    /* подождать до запуска анимации */
+/* animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal; */
+/* gповторение infinite постоянно*/
+/* animation-iteration-count: 2; */
+/* чтобы остался на месте куда шёл */
+/* animation-fill-mode: forwards; */
+/* на паузу поставить, для запуска нужно задать  ховер */
+/* animation-play-state: paused;
+}
+
+.item:hover {
+    animation-play-state: running;
+} */
+/* @keyframes moving{
+    from{
+
+    }
+    to{
+
+    }
+*/
+
+@keyframes moving {
+    0% {
+        left: 100px;
+    }
+    25% {
+        left: 400px;
+        top: 400px;
+    }
+    50% {
+        left: 600px;
+    }
+    75% {
+        left: 700px;
+    }
+    100% {
+        top: 100px;
+        left: 800px;
+    }
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

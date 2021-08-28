@@ -1,0 +1,74 @@
+body {
+    background: url(./../images/bg-new.png) no-repeat bottom;
+    background-size: cover;
+    display: block;
+    background-attachment: fixed;
+}
+/* Head section */
+.nav ul {
+    padding: 20px;
+}
+.head-section {
+    list-style: none;
+    margin-left: 200px;
+}
+.head-section li {
+    width: auto;
+    float: left;
+    padding: 10px;
+}
+.head-section a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    /* Middle section */
+}
+.middel-section {
+    width: auto;
+    height: 250px;
+    margin-top: 70px;
+}
+.middel-section p {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 230px;
+}
+.middel-section span {
+    font-weight: bolder;
+}
+.middel-section button {
+    padding: 10px;
+    width: 150px;
+    margin-left: 220px;
+    margin-top: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+/* Bottom section */
+.bottom-section {
+    height: 200px;
+    box-sizing: border-box;
+    margin-left: 220px;
+    width: 620px;
+    margin-bottom: 140px;
+}
+.bottom-section div {
+    float: left;
+    border: 1px solid white;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    border-radius: 12px;
+}
+.bottom-section img {
+    width: 50px;
+}

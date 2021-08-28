@@ -1,0 +1,107 @@
+html,
+body,
+ul,
+li,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.nav ul {
+    display: flex;
+    background-color: #333;
+}
+
+.nav ul li {
+    border-right: 2px solid #ccc;
+    list-style: none;
+}
+
+.nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4caf50;
+}
+#root {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.left-contacts {
+    width: 80%;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.left-contacts:hover {
+    background-color: #4caf4fa8;
+    cursor: pointer;
+}
+.left-icon {
+    position: absolute;
+    width: 10%;
+    top: 35px;
+    right: 10px;
+}
+.right {
+    width: 40%;
+    border: 1px solid black;
+    padding-left: 40px;
+    background-color: rgb(184, 235, 207);
+    display: none;
+}
+.icon {
+    width: 6%;
+}
+.form {
+    padding-top: 100px;
+    width: 500px;
+    text-align: right;
+    margin: 0 auto;
+}
+.form input {
+    padding: 10px;
+    width: 400px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+.form button {
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid green;
+    background-color: rgba(0, 128, 0, 0.24);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: rgba(0, 128, 0, 0.514);
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
