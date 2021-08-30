@@ -2,25 +2,35 @@ const CONTACTS_KEY = 'CONTACTS';
 
 class Store{
     static save(contact) {
-        const allContacts = this.getAll();
-        allContacts.push(contact);
-        this.updateLocalStorage(allContacts);
+        return this.getAll().then(res => {
+            return new Promise(resolve=> {
+                setTimeout(() => {
+                    res.push(contact);
+                    this.updateLocalStorage(res);
+                    resolve(res)
+                },1000)
+            })
+        })
     }
     static getAll() {
-        let str = localStorage.getItem(CONTACTS_KEY);
-        if (!str) {
-            return[]
-        }
-        const contacts = JSON.parse(str);
-        return contacts;
-        // return (str) ? JSON.parse(str) : []
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                let str = localStorage.getItem(CONTACTS_KEY);
+                const contacts = (str) ? JSON.parse(str) : [];
+                resolve(contacts);
+            },1500)
+        })
     }
     static updateLocalStorage(contacts) {
         localStorage.setItem(CONTACTS_KEY, JSON.stringify(contacts))
     }
-    static removeUser(index) {
-        let str = localStorage.getItem(CONTACTS_KEY);
-        const arr=JSON.parse(str);
-        arr.splice(index, 1);
+    static remove(index) {
+        let contacts = this.getAll();
+        contacts.splice(index, 1);
+        if (contacts.length === 0) {
+            localStorage.removeItem(CONTACTS_KEY)
+        } else {
+                this.updateLocalStorage(contacts)
+        }
     }
 }

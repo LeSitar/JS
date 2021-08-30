@@ -1,13 +1,29 @@
 const right = document.querySelector('.right'),
-    form = document.querySelector('#contact-form');
+    form = document.querySelector('#contact-form'),
+    listLoader = document.querySelector('.lds-dual-ring');
 
-
-renderList();
+let currentContact = [];
+//listLoader.classList.add('hide');
+showListLoader(false);
+loadList();
 form.onsubmit = onAddContactHandler;
-function renderList() {
-    const contact = Store.getAll();
-    right.innerHTML = contact.map(mapToRow).join('')
 
+
+function loadList() {
+    showRightBox(false)
+    showListLoader(true);
+    Store.getAll().then(contacts => {
+        showListLoader(false);
+        currentContact = contacts;
+        showRightBox(true)
+        renderList();
+    });
+}
+
+function renderList() {
+    right.innerHTML = currentContact.map(mapToRow).join('');
+    const buttons = right.querySelectorAll('button');
+    buttons.forEach(b=> b.onclick=onRemoveContactHandler)
 }
 
 function mapToRow(contact, index) {
@@ -32,15 +48,29 @@ function onAddContactHandler(e) {
         form.phone.value,
         form.email.value
     )
-    Store.save(contact);
-    renderList();
-    form.reset(); //очистит все  value
+    showListLoader(true);
+    showRightBox(false);
+    Store.save(contact).then(res => {
+        currentContact = res;
+        showListLoader(false)
+        renderList();
+        showRightBox(true);
+        form.reset(); //очистит все  value
+    });
+
+    
     
 }
+function onRemoveContactHandler(event) {
+    const index = +event.target.dataset.index;
+    Store.remove(index);
+    renderList();
+}
 
-// function del(ind) {
-//     const target = document.querySelector('.right').getElementsByTagName('button');
+function showListLoader(isShow) {
+    listLoader.style.display = isShow ? 'block' : 'none'
+}
 
-    
-// }
-Store.removeUser(1);
+function showRightBox(isShow) {
+    right.style.display=isShow ? 'block' : 'none'
+}
