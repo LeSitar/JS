@@ -3,7 +3,6 @@ const right = document.querySelector('.right'),
     listLoader = document.querySelector('.lds-dual-ring');
 
 let currentContact = [];
-//listLoader.classList.add('hide');
 showListLoader(false);
 loadList();
 form.onsubmit = onAddContactHandler;
@@ -65,6 +64,7 @@ function onRemoveContactHandler(event) {
     const index = +event.target.dataset.index;
     Store.remove(index);
     renderList();
+    loadList();
 }
 
 function showListLoader(isShow) {

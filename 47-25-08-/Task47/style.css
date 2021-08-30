@@ -31,7 +31,7 @@ input {
     border: 6px solid rgb(153, 18, 18);
     border-color: rgba(167, 24, 24, 0.404) transparent rgb(145, 23, 23)
         transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
+    animation: lds-dual-ring 1s linear infinite;
 }
 @keyframes lds-dual-ring {
     0% {
