@@ -26,7 +26,7 @@ class Store {
     }
     static remove(index) {
         Store.getAll().then(contacts => {
-            let currentContact = contacts;
+            let currentContact = contacts;   // зачем вам здесь переменная currentContact? вам по хорошему отсюда нужно отдавать укороченный массив, а в app.js его уже сохранять в currentContact и вызывать после этого renderConatcts
             currentContact.splice(index, 1);
             if (contacts.length === 0) {
                 localStorage.removeItem(CONTACTS_KEY)
