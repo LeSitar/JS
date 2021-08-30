@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgb(203, 208, 216);
+}
+.users-list {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(128, 255, 0, 0.74);
+    width: 600px;
+    margin: 0 auto;
+}
+.users-list h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+.users-list h3:hover {
+    cursor: pointer;
+    font-size: larger;
+    color: blueviolet;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right,
+.left {
+    margin-top: 20px;
+    padding: 10px;
+    width: 45%;
+}
