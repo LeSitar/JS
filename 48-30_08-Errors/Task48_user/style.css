@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    flex-basis: calc(100% / 5 - 10px);
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 0 10px 10px 0;
+    text-align: center;
+}
